@@ -1,6 +1,6 @@
 echo "deletes the cluster"
 
-echo "cluster FQDN: $1"
-echo "s3 bucket: $2"
+echo "cluster FQDN: $CLUSTER_FQDN"
+echo "s3 bucket: $BUCKET_NAME"
 
-kops create cluster --name=$1 --state=s3://$2
+kops create cluster --name=$CLUSTER_FQDN --state=s3://$BUCKET_NAME

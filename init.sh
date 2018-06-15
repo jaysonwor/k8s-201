@@ -17,7 +17,6 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 echo "AWS Configuration"
 
 echo "setup aws configure"
-echo "setup s3 bucket (e.g aws s3api create-bucket --bucket kops-1q2w)"
 echo "generate key: (e.g ssh-keygen -f .ssh/id_rsa)"
 
 

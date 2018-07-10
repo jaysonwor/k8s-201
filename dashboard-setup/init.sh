@@ -11,7 +11,8 @@ echo "bind user permission"
 kubectl apply -f sample-user-binding.yml
 
 echo "access the dashboard here"
-kubectl cluster-info 
+#kubectl cluster-info 
+echo "https://api.jlcontracting.org/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/#!/overview?namespace=default"
 
 echo "token for access"
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | awk '{print $1}')
